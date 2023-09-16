@@ -1,0 +1,80 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url(https://nationaltoday.com/wp-content/uploads/2020/05/star-wars-day.jpg);
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: column;
+  max-width: 100vh;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 0px 5px 10px rgba(241, 194, 75, 0.787);
+  font-size: 5rem;
+}
+
+li {
+  list-style: none;
+  font-size: 2rem;
+  border: 3px solid grey;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.info {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.show-modal {
+  display: block;
+}
+
+.contentContainer {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.image {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+}
+
+.close_btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: rgb(255, 0, 217);
+  color: rgb(255, 255, 255);
+}
